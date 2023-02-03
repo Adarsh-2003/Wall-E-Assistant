@@ -1,20 +1,19 @@
-Requirements / LookOuts
+# Requirements / LookOuts
 
-*pip install :-
+## *pip install :-
     selenium
     datetime
     smtplib
 
-*Compatible web browser's webdriver with its exe file 
+## *Compatible web browser's webdriver with its exe file 
 
-*Dynamic file locations of other devices :- 
+## *Dynamic file locations of other devices :- 
     i) Excel
     ii) PowerPoint
     iii) Word
     iv) IDLE
 
-*
-Hello ! ,
+## Hello ! ,
 I'm  Wall-E , a small assistant created by Adarsh Gupta .
 I'm capable of running or loading ...
     GitHub
