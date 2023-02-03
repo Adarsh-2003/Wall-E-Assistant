@@ -30,7 +30,7 @@ def github():
     user.send_keys('adgupta183@gmail.com')
     paswd=driver.find_element_by_id('password')
     paswd.click()
-    paswd.send_keys('adgupta183')
+    paswd.send_keys('yourpassword')
     submit=driver.find_element_by_name('commit')
     submit.click()
 
@@ -54,7 +54,7 @@ def sendEmail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('adgupta183@gmail.com', 'golegjwbcmhlxrdq')
+    server.login('adgupta183@gmail.com', 'googleAppcodeforbypassing2stepauthentication')
     msg=f"subject : {sub} \n\n{body}"
     server.sendmail('adgupta183@gmail.com', to_user , msg)
     print("Your message has been delivered successfully !")
@@ -92,7 +92,7 @@ while(True):
         whatsapp()
 
     elif 'email' in input_user:
-        print("Enter the recipient address ?")
+        print("Enter the recipient address : ")
         to_user=input()
         print("Enter the subject be : ")
         sub=input()
