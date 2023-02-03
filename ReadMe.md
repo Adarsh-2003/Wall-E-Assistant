@@ -14,8 +14,8 @@
     iv) IDLE
 
 ## Hello ! ,
-I'm  Wall-E , a small assistant created by Adarsh Gupta .
-I'm capable of running or loading ...
+## I'm  Wall-E , a small assistant created by Adarsh Gupta .
+## I'm capable of running or loading ...
     * GitHub
     * WhatsApp
     * YouTube
