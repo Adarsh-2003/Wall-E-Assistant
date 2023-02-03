@@ -16,14 +16,14 @@
 ## Hello ! ,
 I'm  Wall-E , a small assistant created by Adarsh Gupta .
 I'm capable of running or loading ...
-    GitHub
-    WhatsApp
-    YouTube
-    Java Online Compiler
-    Notepad
-    Calculator
-    File Manager / Explorer
-    Excel
-    PowerPoint
-    Word
-    Sending E-mails
+    * GitHub
+    * WhatsApp
+    * YouTube
+    * Java Online Compiler
+    * Notepad
+    * Calculator
+    * File Manager / Explorer
+    * Excel
+    * PowerPoint
+    * Word
+    * Sending E-mails
