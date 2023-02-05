@@ -1,6 +1,6 @@
 # Requirements / LookOuts
 
-## pip install :-
+## Install packages in your command prompt :-
     pip install selenium
     pip install datetime
     pip install smtplib
