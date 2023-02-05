@@ -14,7 +14,7 @@ elif 12 <= currentTime.hour < 17:
     now="Good afternoon "
 else:
     now="Good evening "
-print("\n")
+print("")
 print(f"Hello Sir ... {now}! ")
 print("I'm Wall-E ;) \nA small scale assistant created by Adarsh Gupta \n")
 
@@ -23,13 +23,13 @@ def github():
     driver.maximize_window()
     driver.get('https://github.com/login')
     time.sleep(1)
-    user=driver.find_element_by_id('login_field')
+    user=driver.find_element('id','login_field')
     user.click()
     user.send_keys('adgupta183@gmail.com')
-    paswd=driver.find_element_by_id('password')
+    paswd=driver.find_element("id",'password')
     paswd.click()
-    paswd.send_keys('yourGithubPasswd')
-    submit=driver.find_element_by_name('commit')
+    paswd.send_keys('adgupta183')
+    submit=driver.find_element('name','commit')
     submit.click()
 
 def whatsapp():
@@ -52,7 +52,7 @@ def sendEmail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('adgupta183@gmail.com', 'YourgoogleAPPkeyforbypassing2factauthentication')
+    server.login('adgupta183@gmail.com', 'golegjwbcmhlxrdq')
     msg=f"subject : {sub} \n\n{body}"
     server.sendmail('adgupta183@gmail.com', to_user , msg)
     print("Your message has been delivered successfully !")
@@ -73,7 +73,7 @@ def search():
     pg.press('enter')
 
 while(True):
-    print("How can I help you today ")
+    print("\nHow can I help you today \n")
     input_user=input().lower()
 
     if 'github' in input_user:
