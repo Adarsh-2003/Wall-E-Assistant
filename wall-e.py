@@ -1,10 +1,9 @@
 import time
 import datetime
 import smtplib
-import subprocess
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
+import pyautogui as pg
 
 s=Service('chromedriver.exe')
 currentTime = datetime.datetime.now()
@@ -17,8 +16,7 @@ else:
     now="Good evening "
 print("\n")
 print(f"Hello Sir ... {now}! ")
-print("I'm Wall-E ;) \nA small scale assistant created by Adarsh Gupta ")
-print("\n")
+print("I'm Wall-E ;) \nA small scale assistant created by Adarsh Gupta \n")
 
 def github():
     driver=webdriver.Chrome(service=s)
@@ -30,7 +28,7 @@ def github():
     user.send_keys('adgupta183@gmail.com')
     paswd=driver.find_element_by_id('password')
     paswd.click()
-    paswd.send_keys('yourpassword')
+    paswd.send_keys('yourPasswd')
     submit=driver.find_element_by_name('commit')
     submit.click()
 
@@ -54,45 +52,34 @@ def sendEmail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('adgupta183@gmail.com', 'googleAppcodeforbypassing2stepauthentication')
+    server.login('adgupta183@gmail.com', 'YourgoogleAPPkeyforbypassing2factauthentication')
     msg=f"subject : {sub} \n\n{body}"
     server.sendmail('adgupta183@gmail.com', to_user , msg)
     print("Your message has been delivered successfully !")
 
-def notepad():
-    subprocess.call('notepad.exe')
+def lastoptn():
+    pg.moveTo(101,1057,0.1)
+    pg.click()
+    pg.write(input_user)
+    pg.press('enter')
 
-def calculator():
-    subprocess.call('calc.exe')
-
-def excel():
-    subprocess.call('C://Program Files (x86)//Microsoft Office//root//Office16//EXCEL.exe')
-
-def powerpoint():
-    subprocess.call('C://Program Files (x86)//Microsoft Office//root//Office16//POWERPNT.exe')
-
-def explorer():
-    subprocess.call('explorer.exe')
-
-def word():
-    subprocess.call('C://Program Files (x86)//Microsoft Office//root//Office16//WINWORD.exe')
-
-def idle():
-    subprocess.call('IDLE.exe')
-
+def search():
+    driver=webdriver.Chrome(service=s)
+    driver.maximize_window()
+    pg.moveTo(312,65,0.1)
+    pg.click()
+    pg.write(input_user[7:])
+    pg.press('enter')
 
 while(True):
-    print("How can i help you today ")
+    print("How can I help you today ")
     input_user=input().lower()
 
     if 'github' in input_user:
         github()
 
-    elif 'whatsapp' in input_user:
-        whatsapp()
-
     elif 'email' in input_user:
-        print("Enter the recipient address : ")
+        print("Enter the recipient address ?")
         to_user=input()
         print("Enter the subject be : ")
         sub=input()
@@ -100,23 +87,8 @@ while(True):
         body=input()
         sendEmail()
 
-    elif 'notepad' in input_user:
-        notepad()
-
-    elif 'calc' in input_user:
-        calculator()
-
-    elif 'explorer' in input_user:
-        explorer()
-
-    elif 'excel' in input_user:
-        excel()
-
-    elif 'ppt' in input_user:
-        powerpoint()
-
-    elif 'word' in input_user:
-        word()
+    elif 'wp' in input_user:
+        whatsapp()
 
     elif 'yt' in input_user:
         youtube()
@@ -124,11 +96,11 @@ while(True):
     elif 'java' in input_user:
         javaonlinec()
 
-    elif 'idle' in input_user:
-        idle()
-    
+    elif 'search' in input_user:
+        search()
+        
     elif 'quit' in input_user:
         break
-
+        
     else: 
-        print("Out of Limits")
+        lastoptn()
