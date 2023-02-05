@@ -10,7 +10,7 @@ currentTime = datetime.datetime.now()
 currentTime.hour
 if currentTime.hour < 12:
     now="Good morning"
-elif 12 <= currentTime.hour < 18:
+elif 12 <= currentTime.hour < 17:
     now="Good afternoon "
 else:
     now="Good evening "
@@ -28,7 +28,7 @@ def github():
     user.send_keys('adgupta183@gmail.com')
     paswd=driver.find_element_by_id('password')
     paswd.click()
-    paswd.send_keys('yourPasswd')
+    paswd.send_keys('yourGithubPasswd')
     submit=driver.find_element_by_name('commit')
     submit.click()
 
@@ -68,7 +68,8 @@ def search():
     driver.maximize_window()
     pg.moveTo(312,65,0.1)
     pg.click()
-    pg.write(input_user[7:])
+    word=input_user[7:]
+    pg.write(word)
     pg.press('enter')
 
 while(True):
@@ -87,20 +88,21 @@ while(True):
         body=input()
         sendEmail()
 
-    elif 'wp' in input_user:
+    elif 'wp' in input_user or 'whatsapp' in input_user:
         whatsapp()
 
-    elif 'yt' in input_user:
+    elif 'yt' in input_user or 'youtube' in input_user:
         youtube()
 
-    elif 'java' in input_user:
+    elif 'java' in input_user or 'java compiler' in input_user:
         javaonlinec()
 
     elif 'search' in input_user:
         search()
-        
-    elif 'quit' in input_user:
+    
+    elif 'quit' in input_user or 'exit' in input_user:
+        print("Thank you Sir, Have a good day!")
         break
-        
+
     else: 
         lastoptn()
