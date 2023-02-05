@@ -4,6 +4,7 @@
     pip install selenium
     pip install datetime
     pip install smtplib
+    pip install pyautogui
 
 ## Download Chromedriver according to your chrome version :-
    [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
