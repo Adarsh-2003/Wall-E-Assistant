@@ -6,7 +6,7 @@
     pip install smtplib
 
 ## *Download Chromedriver according to your chrome version :-
-    https://chromedriver.chromium.org/downloads
+    [Link to driver](https://chromedriver.chromium.org/downloads)
 
 ## Hello ! ,
 ## I'm  Wall-E , a small assistant created by Adarsh Gupta .
