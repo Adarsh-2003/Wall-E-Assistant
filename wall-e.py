@@ -28,7 +28,7 @@ def github():
     user.send_keys('adgupta183@gmail.com')
     paswd=driver.find_element("id",'password')
     paswd.click()
-    paswd.send_keys('adgupta183')
+    paswd.send_keys('yourPaswd')
     submit=driver.find_element('name','commit')
     submit.click()
 
@@ -52,7 +52,7 @@ def sendEmail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('adgupta183@gmail.com', 'golegjwbcmhlxrdq')
+    server.login('adgupta183@gmail.com', 'yourgoogleapppassswd')
     msg=f"subject : {sub} \n\n{body}"
     server.sendmail('adgupta183@gmail.com', to_user , msg)
     print("Your message has been delivered successfully !")
