@@ -5,7 +5,7 @@
     pip install datetime
     pip install smtplib
 
-## *Download Chromedriver according to your chrome version :-
+## Download Chromedriver according to your chrome version :-
     [Link to driver](https://chromedriver.chromium.org/downloads)
 
 ## Hello ! ,
