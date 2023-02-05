@@ -80,7 +80,7 @@ while(True):
         github()
 
     elif 'email' in input_user:
-        print("Enter the recipient address ?")
+        print("Enter the recipient address : ")
         to_user=input()
         print("Enter the subject be : ")
         sub=input()
@@ -101,7 +101,7 @@ while(True):
         search()
     
     elif 'quit' in input_user or 'exit' in input_user:
-        print("Thank you Sir, Have a good day!")
+        print("Thank you Sir, Have a good day !")
         break
 
     else: 
