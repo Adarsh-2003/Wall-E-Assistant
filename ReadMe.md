@@ -21,3 +21,7 @@
    Version 2 :- Capable of running all the softwares present on the system  and send mails
                 Needless to worry about the specific keyword to be entered inorder to run software
                 Carries out searches on chrome through pyautugui
+
+## Output :-
+I've demonstrated all its features in a video here is the link : 
+[https://youtu.be/ZAj6F7ucrU4](https://youtu.be/ZAj6F7ucrU4)
